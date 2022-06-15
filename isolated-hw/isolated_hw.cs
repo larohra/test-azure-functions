@@ -23,7 +23,7 @@ namespace isolated_hw
             var response = req.CreateResponse(HttpStatusCode.OK);
             response.Headers.Add("Content-Type", "text/plain; charset=utf-8");
 
-            response.WriteString($"Welcome to Azure Functions! got the {req.Method} request from {req.Url}");
+            response.WriteString($"Welcome to Azure Functions! got the {req.Method} request from {req.Url}.\n Method: Zip Deploy - Deploymetn Center");
 
             return response;
         }
